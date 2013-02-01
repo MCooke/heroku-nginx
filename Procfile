@@ -1,1 +1,1 @@
-web: erb $PWD/nginx/heroku.conf > $PWD/nginx/heroku-running.conf && nginx /app/nginx/heroku-running.conf && node dummy.js
+web: erb $PWD/nginx/heroku.conf > $PWD/nginx/heroku-running.conf && nginx -c /app/nginx/heroku-running.conf && node dummy.js
