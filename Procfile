@@ -1,0 +1,1 @@
+web: erb $PWD/nginx/heroku.conf > $PWD/nginx/heroku-running.conf && nginx /app/nginx/heroku-running.conf
